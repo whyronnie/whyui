@@ -6,7 +6,7 @@
 
 引用css（使用了font-awesome）
 
-```javascript
+```html
 <link rel="stylesheet" href="css/whyui.css">
 <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 ```
