@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 ```
 
-### whyselect
+### whyselect [demo]{https://whyronnie.github.io/whyui}
 
 ```html
 <select name="" id="whyselect">
