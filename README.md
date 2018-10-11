@@ -2,6 +2,10 @@
 
 一套黑色风格的ui	[demo](https://whyronnie.github.io/whyui)
 
+## 兼容性
+
+ie10+ 及大多主流浏览器
+
 ## 使用方法
 
 引用css（使用了font-awesome）
