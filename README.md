@@ -42,13 +42,33 @@ ie10+ 及大多主流浏览器
 <span><input type="radio" class="why-radio" name="111" label="蓝"></span>
 ```
 按钮式的单选框
+
+大
+```html
+<span class="why-radio-group why-radio-large">
+    <span class="why-radio-btn">北京</span>
+    <span class="why-radio-btn">上海</span>
+    <span class="why-radio-btn">广州</span>
+    <span class="why-radio-btn">深圳</span>
+</span>
+```
+中
 ```html
 <span class="why-radio-group">
     <span class="why-radio-btn">北京</span>
     <span class="why-radio-btn">上海</span>
     <span class="why-radio-btn">广州</span>
     <span class="why-radio-btn">深圳</span>
-</span>	
+</span>
+```
+小
+```html
+<span class="why-radio-group why-radio-small">
+    <span class="why-radio-btn">北京</span>
+    <span class="why-radio-btn">上海</span>
+    <span class="why-radio-btn">广州</span>
+    <span class="why-radio-btn">深圳</span>
+</span> 
 ```
 
 ### checkbox

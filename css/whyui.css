@@ -140,7 +140,7 @@ input[type="radio"],input[type="checkbox"]{
 	border-left: none;
 }
 .why-radio-btn{
-	padding: 10px 20px;
+	padding: 8px 16px;
 	color: #474644;
 	color: var(--whyblack);
 	border-left: 1px solid #474644;
@@ -153,6 +153,12 @@ input[type="radio"],input[type="checkbox"]{
 	background-color: #474644;
 	background-color: var(--whyblack);
 	color: #fff;
+}
+.why-radio-large .why-radio-btn{
+	padding: 10px 20px;
+}
+.why-radio-small .why-radio-btn{
+	padding: 6px 12px;
 }
 
 /*checkbox*/
