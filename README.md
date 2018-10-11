@@ -9,11 +9,15 @@ ie10+ 及大多主流浏览器
 ## 使用方法
 
 引用css（使用了font-awesome）
-
 ```html
 <link rel="stylesheet" href="css/whyui.css">
 <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 ```
+引用js
+```html
+<script src="whyui.js"></script>
+```
+
 ### button
 
 ```html
