@@ -72,6 +72,7 @@ ie10+ 及大多主流浏览器
     <option value="2">b</option>
     <option value="3">c</option>
 </select>
+<script src="whyselect/whyselect.js"></script>
 ```
 ```javascript
 var s = new WhySelect({
