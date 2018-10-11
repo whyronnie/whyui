@@ -12,11 +12,13 @@ body{
 }
 /*button*/
 .why-btn{
+	background-color: #474644;
 	background-color: var(--whyblack);
 	border: none;
 	padding: 10px 20px;
 	outline: none;
 	border-radius: 4px;
+	color: #409EFF;
 	color: var(--whyprimary);
 	cursor: pointer;
 	font-size: 14px;
@@ -26,29 +28,36 @@ body{
 	/*font-weight: bold;*/
 }
 .why-btn:disabled{
+	background-color: #6A6864;
 	background-color: var(--whyhover);
 	cursor: not-allowed;
 	opacity: .7;
 }
 .why-btn:hover{
 	box-shadow: 3px 3px 10px rgba(0,0,0,0.24);
+	background-color: #6A6864;
 	background-color: var(--whyhover);
 }
 .why-btn:active{
 	/*border-bottom: 2px solid #33322f;
 	border-left: 1px solid #33322f;*/
+	background-color: #2D2C2B;
 	background-color: var(--whyactive);
 }
 .why-btn-success{
+	color: #67C23A;
 	color: var(--whysuccess);
 }
 .why-btn-danger{
+	color: #F56C6C;
 	color: var(--whydanger);
 }
 .why-btn-warning{
+	color: #E6A23C;
 	color: var(--whywarning);
 }
 .why-btn-info{
+	color: #fff;
 	color: var(--whyinfo);
 }
 .why-btn-large{
@@ -62,6 +71,7 @@ body{
 .why-text-btn{
 	border: none;
 	background-color: transparent;
+	color: #409EFF;
 	color: var(--whyprimary);
 	cursor: pointer;
 	outline: none;
@@ -84,17 +94,21 @@ input[type="radio"],input[type="checkbox"]{
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	margin-right: 5px;
 	position: relative;
 	top: 2px;
 }
 .why-radio-s .why-radio-1:hover{
+	border-color: #474644;
 	border-color: var(--whyblack);
 }
 .radio-selected .why-radio-1{
 	position: relative;
+	border-color: #474644;
 	border-color: var(--whyblack);
+	background-color: #474644;
 	background-color: var(--whyblack);
 }
 .why-radio-1:after{
@@ -116,6 +130,7 @@ input[type="radio"],input[type="checkbox"]{
 	font-size: 0;
 	cursor: pointer;
 	display: inline-block;
+	border: 1px solid #474644;
 	border: 1px solid var(--whyblack);
 	overflow: hidden;
 	border-radius: 5px;
@@ -126,13 +141,16 @@ input[type="radio"],input[type="checkbox"]{
 }
 .why-radio-btn{
 	padding: 10px 20px;
+	color: #474644;
 	color: var(--whyblack);
+	border-left: 1px solid #474644;
 	border-left: 1px solid var(--whyblack);
 	font-size: 14px;
 	display: inline-block;
 	transition: background-color .3s,color .3s;
 }
 .rb-selected{
+	background-color: #474644;
 	background-color: var(--whyblack);
 	color: #fff;
 }
@@ -148,17 +166,21 @@ input[type="radio"],input[type="checkbox"]{
 	width: 12px;
 	height: 12px;
 	border-radius: 2px;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	margin-right: 5px;
 	position: relative;
 	top: 2px;
 }
 .why-checkbox-s .why-checkbox-1:hover{
+	border-color: #474644;
 	border-color: var(--whyblack);
 }
 .checkbox-checked .why-checkbox-1{
 	position: relative;
+	border-color: #474644;
 	border-color: var(--whyblack);
+	background-color: #474644;
 	background-color: var(--whyblack);
 }
 .why-checkbox-1:after{
@@ -186,56 +208,41 @@ input[type="radio"],input[type="checkbox"]{
 	display: inline-block;
 	font-size: 14px;
 	border-radius: 4px;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	outline: none;
 	box-sizing: border-box;
+	color: #474644;
 	color: var(--whyblack);
 	transition: border-color .3s;
 }
 .why-input::-webkit-input-placeholder{
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-input:-moz-input-placeholder{
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-input::-moz-input-placeholder{
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-input:-ms-input-placeholder{
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-input:focus{
+	border-color: #474644;
 	border-color: var(--whyblack);
 }
-.why-input-s{
-	position: relative;
-}
-.why-input-1{
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	left: 10px;
-}
-.why-input-1 .fa,.why-input-3 .fa{
-	color: var(--whygray);
-	font-size: 14px;
-}
-.why-input-2 input{
-	padding-left: 30px;
-}
-.why-input-3{
-	position: absolute;
-	display: inline-block;
-	right: 15px;
-	top: 0;
-}
-.why-input-4 input{
-	padding-right: 30px;
-}
+
 .why-textarea{
 	border-radius: 4px;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	outline: none;
+	color: #474644;
 	color: var(--whyblack);
 	transition: border-color .3s;
 	padding: 10px;
@@ -245,35 +252,12 @@ input[type="radio"],input[type="checkbox"]{
 	line-height: 20px;
 }
 .why-textarea:focus{
+	border-color: #474644;
 	border-color: var(--whyblack);
 }
 .why-textarea::-webkit-input-placeholder{
+	color: #ccc;
 	color: var(--whygray);
-}
-.slot{
-	display: inline-block;
-	border: 1px solid var(--whygray);
-	display: inline-block;
-	padding: 0 15px;
-	font-size: 14px;
-	height: 36px;
-	line-height: 36px;
-	background-color: #eee;
-	color: var(--whyblack);
-}
-.preslot{
-	border-radius: 5px 0 0 5px;
-	border-right: none;
-}
-.why-pretpl-input{
-	border-radius: 0 5px 5px 0;
-}
-.sufslot{
-	border-radius: 0 5px 5px 0;
-	border-left: none;
-}
-.why-suftpl-input{
-	border-radius: 5px 0 0 5px;
 }
 
 
@@ -288,6 +272,7 @@ input[type="radio"],input[type="checkbox"]{
 	position: relative;
 	display: inline-block;
 	padding: 0 50px 0 15px;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	border-radius: 5px;
 	cursor: pointer;
@@ -297,6 +282,7 @@ input[type="radio"],input[type="checkbox"]{
 	height: 36px;
 	color: #fff;
 	transition: border-color .3s;
+	background-color: #474644;
 	background-color: var(--whyblack);
 }
 .why-select-icon{
@@ -304,6 +290,7 @@ input[type="radio"],input[type="checkbox"]{
 	right: 10px;
 	transition: transform .3s;
 	font-size: 20px;
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-select-active .why-select-icon{
@@ -315,11 +302,13 @@ input[type="radio"],input[type="checkbox"]{
 	box-sizing: border-box;
 	position: absolute;
 	padding: 6px 0;
+	border: 1px solid #ccc;
 	border: 1px solid var(--whygray);
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px #ddd, -1px -1px 3px #ddd;
 	left: 0;
 	font-size: 14px;
+	background-color: #474644;
 	background-color: var(--whyblack);
 }
 .why-option-group:after{
@@ -330,15 +319,18 @@ input[type="radio"],input[type="checkbox"]{
 	left: 30px;
 	transform: rotate(45deg);
 	z-index: 100px;
+	background-color: #474644;
 	background-color: var(--whyblack);
 }
 .why-option{
 	padding: 0 15px;
 	line-height: 30px;
 	cursor: pointer;
+	color: #ccc;
 	color: var(--whygray);
 }
 .why-option:hover{
+	background-color: #6A6864;
 	background-color: var(--whyhover);
 }
 .why-option-selected{
@@ -359,6 +351,7 @@ input[type="radio"],input[type="checkbox"]{
 
 /*light主题*/
 .why-theme-light .why-select-content{
+	color: #474644;
 	color: var(--whyblack);
 	background-color: #fff;
 }
@@ -375,6 +368,7 @@ input[type="radio"],input[type="checkbox"]{
 	background-color: #eee;
 }
 .why-theme-light .why-option-selected{
+	color: #474644;
 	color: var(--whyblack);
 }
 
