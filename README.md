@@ -36,10 +36,10 @@
 按钮式的单选框
 ```html
 <span class="why-radio-group">
-	<span class="why-radio-btn">北京</span>
-	<span class="why-radio-btn">上海</span>
-	<span class="why-radio-btn">广州</span>
-	<span class="why-radio-btn">深圳</span>
+  <span class="why-radio-btn">北京</span>
+  <span class="why-radio-btn">上海</span>
+  <span class="why-radio-btn">广州</span>
+  <span class="why-radio-btn">深圳</span>
 </span>	
 ```
 
@@ -60,18 +60,18 @@
 
 ```html
 <select name="" id="whyselect">
-	<option value="1">a</option>
-	<option value="2">b</option>
-	<option value="3">c</option>
+  <option value="1">a</option>
+  <option value="2">b</option>
+  <option value="3">c</option>
 </select>
 ```
 ```javascript
 var s = new WhySelect({
-	id: "whyselect",
-	theme: "",	//有默认和light两种主题，可不填
-	change: function(){
-		//select选中选项的事件
-	}
+  id: "whyselect",
+  theme: "",	//有默认和light两种主题，可不填
+  change: function(){
+	//select选中选项的事件
+  }
 });
 ```
 
