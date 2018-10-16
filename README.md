@@ -18,7 +18,7 @@ ie10+ 及大多主流浏览器
 <script src="whyui.js"></script>
 ```
 
-### button
+### button 按钮
 
 ```html
 <button class="why-btn">默认按钮</button>
@@ -33,7 +33,7 @@ ie10+ 及大多主流浏览器
 <button class="why-text-btn">文字按钮</button>
 ```
 
-### radio
+### radio 单选框
 
 父级的span元素必须有，但可以换成div或其他元素
 ```html
@@ -71,20 +71,20 @@ ie10+ 及大多主流浏览器
 </span> 
 ```
 
-### checkbox
+### checkbox 复选框
 
 同radio
 ```html
 <span><input type="checkbox" class="why-checkbox" name="111" label="备选项"></span>
 ```
 
-### input
+### input 输入框
 ```html
 <input type="text" class="why-input" placeholder="请输入">
 <textarea name="" id="" class="why-textarea" cols="30" rows="5" placeholder="请输入"></textarea>
 ```
 
-### whyselect
+### whyselect 下拉框
 
 ```html
 <select name="" id="whyselect">
