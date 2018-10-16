@@ -133,7 +133,7 @@ input[type="radio"],input[type="checkbox"]{
 	border: 1px solid #474644;
 	border: 1px solid var(--whyblack);
 	overflow: hidden;
-	border-radius: 5px;
+	border-radius: 4px;
 	vertical-align: middle;
 }
 .why-radio-btn:first-child{
@@ -154,8 +154,15 @@ input[type="radio"],input[type="checkbox"]{
 	background-color: var(--whyblack);
 	color: #fff;
 }
+.why-radio-large{
+	border-radius: 5px;
+}
 .why-radio-large .why-radio-btn{
 	padding: 10px 20px;
+	
+}
+.why-radio-small{
+	border-radius: 3px;
 }
 .why-radio-small .why-radio-btn{
 	padding: 6px 12px;
@@ -208,7 +215,7 @@ input[type="radio"],input[type="checkbox"]{
 
 /*input*/
 .why-input{
-	padding: 0 15px;
+	padding: 0 12px;
 	height: 38px;
 	line-height: 38px;
 	display: inline-block;
@@ -241,6 +248,18 @@ input[type="radio"],input[type="checkbox"]{
 .why-input:focus{
 	border-color: #474644;
 	border-color: var(--whyblack);
+}
+.why-input-large{
+	padding: 0 15px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+}
+.why-input-small{
+	padding: 0 10px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 12px;
 }
 
 .why-textarea{
@@ -394,4 +413,120 @@ input[type="radio"],input[type="checkbox"]{
 @keyframes whyselect_ani_top_out{
 	from{bottom: 50px;opacity: 1}
 	to{bottom: 40px;opacity: 0}
+}
+
+/*messagebox 弹框*/
+.why-shadow{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.why-msgbox{
+	position: absolute;
+	width: 400px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 33vh;
+	color: #fff;
+	background-color: #474644;
+	background-color: var(--whyblack);
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+.why-shadow-title{
+	font-size: 18px;
+}
+.why-shadow-content{
+	padding: 10px 0 15px;
+}
+.why-shadow-btns{
+	text-align: right;
+}
+.why-shadow-close{
+	float: right;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	top: 5px;
+}
+.why-shadow-close:before{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 13px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(135deg);
+}
+.why-shadow-close:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 13px;
+	height: 2px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+
+/*message 提示*/
+.why-msg{
+	display: none;
+	position: fixed;
+	width: 400px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 10px 20px;
+	border-radius: 5px;
+	top: 30px;
+	background: rgba(47,46,44,.7);
+	color: #fff;
+	font-size: 14px;
+}
+.why-msg-success{
+	color: #67C23A;
+	color: var(--whysuccess);
+}
+.why-msg-error{
+	color: #F56C6C;
+	color: var(--whydanger);
+}
+.why-msg-warning{
+	color: #E6A23C;
+	color: var(--whywarning);
+}
+
+@keyframes whymsgbox_ani_in{
+	from{top: 33vh;opacity: 0}
+	to{top: 35vh;opacity: 1}
+}
+@keyframes whymsgbox_ani_out{
+	from{top: 35vh;opacity: 1}
+	to{top: 33vh;opacity: 0}
+}
+
+@keyframes whyshadow_ani_in{
+	from{background: rgba(0,0,0,0);}
+	to{background: rgba(0,0,0,.3);}
+}
+@keyframes whyshadow_ani_out{
+	from{background: rgba(0,0,0,.3);}
+	to{background: rgba(0,0,0,0);}
+}
+
+@keyframes whymsg_ani_in{
+	from{top: -50px;opacity: 0;}
+	to{top: 30px;opacity: 1;}
+}
+@keyframes whymsg_ani_out{
+	from{top: 30px;opacity: 1;}
+	to{top: -50px;opacity: 0;}
 }

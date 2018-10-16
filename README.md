@@ -104,3 +104,59 @@ var s = new WhySelect({
 });
 ```
 
+### messagebox 弹框
+
+暂不支持多层窗口
+
+alert
+```javascript
+//参数为(content,title,option);
+why.alert("这是一个弹框消息","提示",{confirmText: "好的"});
+```
+
+confirm
+```javascript
+why.confirm("您确定吗？","提示",{
+    confirmText: "确定",
+    cancelText: "取消",
+    cancel: function(){
+        // 取消响应事件
+        alert("您点击了取消");
+    },
+    confirm: function(){
+        // 确定响应事件
+        alert("您点击了确定");
+    }
+});
+```
+
+opendialog
+```javascript
+why.opendialog('<input type="text" id="bbb" class="why-input" placeholder="请输入" style="width:100%;">',"提示",{
+    btns: [{
+        text: "取消",
+        class: "why-btn why-btn-small why-btn-info",
+        click: function(whydom){
+            alert("您点击了取消");
+            why.close();    //关闭窗口
+        }
+    },{
+        text: "提交",
+        class: "why-btn why-btn-small why-btn-success",
+        click: function(whydom){
+            var v = whydom.find("bbb").value;   //获取窗口内的元素，通过id
+            alert("您输入了："+v);
+            why.close();
+        }
+    }]
+});
+```
+
+### message 提示
+
+```javascript
+why.msg("这是一条普通消息");
+why.msg("这是一条成功消息",{type:"success"});
+why.msg("这是一条错误消息",{type:"error"});
+why.msg("这是一条警告消息",{type:"warning"});
+```
