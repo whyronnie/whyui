@@ -1,6 +1,6 @@
 # whyui
 
-一套黑色风格的ui	[demo](whyronnie.github.io/whyui)
+一套黑色风格的ui	[demo](https://whyronnie.github.io/whyui)
 
 ## 兼容性
 
